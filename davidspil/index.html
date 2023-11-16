@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Svampespil</title>
+  <link rel="stylesheet" href="svampe.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div id="screen">
+    <div id="game">
+      <div id="game_background"></div>
+      <div id="game_elements">
+        <div id="winnerContainer">
+          <div id="winner">
+            <h1>YOU WON!</h1>
+            <p id="winnerText"></p>
+            <button onclick="reset()">Try again</button>
+          </div>
+        </div>
+
+        <div id="loserContainer">
+          <div id="loser">
+            <h1>You lost...</h1>
+            <p id="loserText"></p>
+            <button onclick="reset()">Try again</button>
+          </div>
+        </div>
+        <div id="david_container">
+          <div id="david_sprite"></div>
+        </div>
+        <div id="start_container" onclick="start();">
+          <div id="start_sprite"></div>
+        </div>
+        <div id="spawn">
+
+        </div>
+      </div>
+      <div id="game_foreground"></div>
+
+      <div id="game_ui">
+        <div id="score_board">
+          <div id="counter">
+            <p id="point">0</p>
+          </div>
+          <div id="logPoints_container">
+            <div id="logPoints_sprite"></div>
+          </div>
+
+          <div id="hjerteContainer">
+            <div class="hjerte" id="hjerteOne"></div>
+            <div class="hjerte" id="hjerteTwo"></div>
+            <div class="hjerte" id="hjerteThree"></div>
+          </div>
+
+          <div id="hourglassContainer">
+            <div id="hourglass"></div>
+          </div>
+        </div>
+        <div id="life_board"></div>
+        <div id="time_board"></div>
+      </div>
+    </div>
+    <div id="start"></div>
+    <div id="game_over"></div>
+    <div id="level_complete"></div>
+  </div>
+</body>
+
+</html>
